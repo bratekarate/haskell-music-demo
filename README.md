@@ -7,6 +7,6 @@ Small demo project that uses Euterpea to generate (kind of) "random" melodies an
 ## Build and Run
 1. Clone repos
 2. Run `stack run` in the project dir
-3. Enjoy dat freaky-ish, computer generated music
+3. Enjoy dat freaky-ish, computer-generated music
 
 Feel free to fork and make your own melodies, duets, loops and tracks.
