@@ -1,0 +1,5 @@
+.stack-work/
+haskellmusic.cabal
+*~
+.idea/
+haskell-music-demo.iml
