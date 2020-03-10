@@ -6,7 +6,7 @@ import Euterpea as E
 import System.Random
 
 someFunc :: IO ()
-someFunc = E.play $ duet (20, 60, 40) (90, 80, 60) (10, 30, 60)
+someFunc = E.playDev 2 $ duet (20, 60, 50) (70, 80, 70) (10, 30, 40)
 
 duet :: (Int, Int, Int) -> (Int, Int, Int) -> (Int, Int, Int) -> Music (Pitch, Volume)
 duet (minVol1, minVol2, minVol3) (maxVol1, maxVol2, maxVol3) (threshold1, threshold2, threshold3) = do
@@ -23,7 +23,8 @@ duet (minVol1, minVol2, minVol3) (maxVol1, maxVol2, maxVol3) (threshold1, thresh
     (E.tempo 2 -- double melody tempo
       (instrument Marimba mel1 :=:
       instrument E.AcousticBass mel2 :=:
-      instrument Pad8Sweep mel3) :=:
+      instrument TremoloStrings mel3) :=:
+      --instrument StringEnsemble2 mel3) :=:
     E.tempo 0.5 (percKick E.BassDrum1 :=: -- half percussion tempo
     percKick E.AcousticBassDrum :=:
     percSnare2 E.ElectricSnare :=:
