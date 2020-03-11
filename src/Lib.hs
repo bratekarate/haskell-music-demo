@@ -6,7 +6,7 @@ import Euterpea as E
 import System.Random
 
 someFunc :: IO ()
-someFunc = E.playDev 2 $ duet (20, 60, 50) (70, 80, 70) (10, 30, 40)
+someFunc = E.playDev 0 $ duet (20, 60, 50) (70, 80, 70) (10, 30, 40)
 
 duet :: (Int, Int, Int) -> (Int, Int, Int) -> (Int, Int, Int) -> Music (Pitch, Volume)
 duet (minVol1, minVol2, minVol3) (maxVol1, maxVol2, maxVol3) (threshold1, threshold2, threshold3) = do
