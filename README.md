@@ -3,6 +3,7 @@ Small demo project that uses Euterpea to generate (kind of) "random" melodies an
 
 ## Prerequisites
 - Haskell Tool Stack installed
+- On Linux or Mac, a MIDI-Synthesizer must be installed to generate sounds. Follow [this manual](http://www.euterpea.com/midi-on-linux).
 
 ## Build and Run
 1. Clone repos
@@ -10,3 +11,4 @@ Small demo project that uses Euterpea to generate (kind of) "random" melodies an
 3. Enjoy dat freaky-ish, computer-generated music
 
 Feel free to fork and create your own melodies, duets, loops and tracks.
+
